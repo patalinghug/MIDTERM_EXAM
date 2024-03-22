@@ -1,0 +1,177 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Default font */
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    background-color: #4682b4; /* Steel Blue */
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif; /* Using Poppins for headers */
+}
+
+nav {
+    background-color: #87ceeb; /* Sky Blue */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Using Poppins for navigation */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navigation bar stays on top */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif; /* Using Poppins for navigation links */
+    padding: 10px 15px; /* Add padding to improve clickable area */
+}
+
+nav a:hover {
+    color: #4169e1; /* Royal Blue */
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif; /* Default font for section content */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #4169e1; /* Royal Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Using Poppins for footer */
+}
+
+.text_side {
+    height: 700px;
+}
+
+.bohol_text {
+    margin-top: 45px;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif; /* Using Poppins for the specific class */
+}
+
+.home-item {
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Updated styles for grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.box {
+    border-bottom: 1px solid #ccc; /* Add bottom border */
+    padding-bottom: 20px; /* Add some space between boxes */
+}
+
+p {
+    line-height: 3.0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.activity-slides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 139, 0.5); /* Dark Blue */
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 139, 0.8); /* Dark Blue */
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
